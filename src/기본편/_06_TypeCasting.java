@@ -51,5 +51,6 @@ public class _06_TypeCasting {
         System.out.println(d); // 98.8
 
         // int error = Integer.parseInt("최우진");  따옴표 안에 데이터가 올바른지 확인
+
     }
 }
