@@ -22,5 +22,34 @@ public class _06_TypeCasting {
 
         score_d = 93 + 98.8; //93 + 98.8
         System.out.println(score_d); // 191.8
+
+        // 변수에 형변환된 데이터 집어넣기
+        double convertedScoreDouble = score; // 191 -> 191.0
+        System.out.println(convertedScoreDouble);
+        // int -> long -> float -> double (자동 형변환)
+
+        // int covertedScoreInt = score_d;
+        int covertedScoreInt = (int) score_d; // 191.8 -> 191
+        System.out.println(covertedScoreInt);
+        // double -> float -> long -> int (수동 형변환)
+
+        // 숫자를 문자열로 형변환
+        String s1 = String.valueOf(93);
+        s1 = Integer.toString(93);
+        // String s1 = String.valueOf(93); or s1 = Integer.toString(93);
+        System.out.println(s1); // 93
+
+        String s2 = String.valueOf(98.8);
+        s2= Double.toString(98.8);
+        // String s2 = String.valueOf(98.8); or s2 = Double.toString(98.8);
+        System.out.println(s2); // 98.8
+
+        // 문자열을 숫자로 형변환
+        int i = Integer.parseInt("93");
+        System.out.println(i);  // 93
+        double d = Double.parseDouble("98.8");
+        System.out.println(d); // 98.8
+
+        // int error = Integer.parseInt("최우진");  따옴표 안에 데이터가 올바른지 확인
     }
 }
