@@ -18,10 +18,28 @@ public class _08_Operator2 {
 
         num = num % 2;
         System.out.println(num); // 0
-
         // 복합 대입 연산자
+
         num = 10;
-        // num = num + 2;
+        // num = num + 2
         num += 2;
-    }
+        System.out.println(num);  // 12
+
+        num -= 2;
+        System.out.println(num);  // 10
+
+        // num = num * 2;
+        num *= 2;
+        System.out.println(num);  // 20
+
+        // num = num / 2;
+        num /= 2;
+        System.out.println(num); // 10
+
+        // num = num % 2;
+        num %= 2;
+        System.out.println(num); // 0
+
+
+       }
 }
